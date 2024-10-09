@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Registration</title>
+    <link rel="stylesheet" href="{% static 'vol_app/styles.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="icon" href="{% static 'C:\Users\neeth\OneDrive\Desktop\ems\ems\volunteer\vol_app\static\favicon.ico' %}">
+
+
+</head>
+<body>
+    <h1>Volunteer Registration</h1>
+    <form id="volunteer-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+
+
+        <label for="role">Role:</label>
+        <input type="text" id="role" required>
+
+        <label for="shift-start">Shift Start:</label>
+        <input type="datetime-local" id="shift-start" required>
+
+        <label for="shift-end">Shift End:</label>
+        <input type="datetime-local" id="shift-end" required>
+
+        <button type="submit">Register Volunteer</button>
+    </form>
+
+    <script src="{% static 'vol_app/app.js' %}"></script>
+</body>
+</html>
